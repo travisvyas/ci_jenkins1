@@ -10,8 +10,8 @@ public class TestBankAccount {
   @Test
   public void testDebitWithSufficientFunds(){
     BankAccount account = new BankAccount(20);
-    double amount = account.debit(5);
-    Assert.assertEquals(15.0, amount);
+    double amount = account.debit(6);
+    Assert.assertEquals(6.0, amount);
   }
 
 	@Test
